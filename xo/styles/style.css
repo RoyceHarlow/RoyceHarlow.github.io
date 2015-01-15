@@ -1,0 +1,129 @@
+body {
+	font-family: Helvetica;
+	font-size: 16px;
+	padding-top: 20px;
+	background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=424242ff&noise=525152&density=70&opacity=69");
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 600px;
+
+	box-shadow: 0 0 20px #262626;
+	border: 1px solid gray;
+	border-radius: 3px;
+	background-color: #dcdcdc;
+}
+
+#main {
+	padding: 10px;
+	text-align: center;
+}
+
+#header {
+	margin-bottom: 10px;
+	min-height: 50px;
+	color: #666;
+}
+
+#player1 {
+	float: left;
+	width: 70px;
+	text-align: left;
+	padding-left: 10px;
+
+	font-size: 16px;
+}
+
+#player2 {
+	float: right;
+	width: 70px;
+	text-align: right;
+	padding-right: 10px;
+
+	font-size: 16px;
+}
+
+#title {
+	margin: 0 auto;
+	width: 100px;
+	text-align: center;
+
+	font-weight: bold;
+	font-size: 50px;
+}
+
+#options {
+	padding: 5px;
+	border: 1px solid gray;
+	border-radius: 3px;
+	margin: 10px;
+}
+
+.title {
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+}
+
+.title.active {
+	background-color: #5f5;
+	border-radius: 10px;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px;
+}
+
+.slider {
+	width: 90%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+
+	box-shadow: 0px 0 10px #aaa;
+}
+
+label {
+	font-weight: bold;
+	color: #666;
+}
+
+.value {
+	display: inline;
+
+	font-weight: bold;
+	color: #666;
+}
+
+.button {
+	min-width: 200px;
+	margin: 10px;
+
+	box-shadow: 0px 0 20px #aaa;
+}
+
+.cell {
+	width: 100%;
+	cursor: pointer;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	padding: 0px;
+	border: 1px solid gray;
+}
+
+#checkbox {
+	min-width: 200px;
+	margin: 10px;
+	box-shadow: 0px 0 20px #aaa;
+}
+
+.game {
+	margin: 0 auto;
+	width: 90%;
+}

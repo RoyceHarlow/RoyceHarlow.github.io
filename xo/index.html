@@ -1,0 +1,73 @@
+<html spellcheck="false">
+	<head>
+		<title>XO</title>
+
+		<link rel="stylesheet" href="styles/style.css">
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+		<script src="scripts/menu.js"></script>
+
+		<script>
+			$(function() {
+				$("#size-slider").slider({
+					value: 10,
+					min: 5,
+					max: 50,
+					step: 1,
+					slide:
+						function(event, ui) {
+							$("#size").html(ui.value);
+						}
+				});
+
+				$("#ai-slider").slider({
+					value: 4,
+					min: 1,
+					max: 10,
+					step: 1,
+					slide:
+						function(event, ui) {
+							$("#ai").html(ui.value);
+						}
+				});
+
+				$("input[type=checkbox]").button();
+
+				$(".button").button();
+			});
+		</script>
+	</head>
+
+	<body onselectstart="return false;" ondragstart="return false;">
+		<div id="header" class="wrapper">
+			<div class="title" id="title">XO</div>
+		</div>
+
+		<div class="wrapper">
+			<div id="main">
+				<div id="menu">
+					<div class="button" id="start-button">Start</div>
+				</div>
+
+				<div class="button" id="options-button">Options</div>
+				
+				<div id="options">
+					<label>Field Size: </label>
+					<div class="value" id="size">10</div>
+					<div class="slider" id="size-slider"></div>
+
+					<input type="checkbox" id="ai-check"><label for="ai-check" id="checkbox">Use AI</label>
+
+					<br/>
+
+					<label>AI Agression: </label>
+					<div class="value" id="ai">4</div>
+					<div class="slider" id="ai-slider"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
